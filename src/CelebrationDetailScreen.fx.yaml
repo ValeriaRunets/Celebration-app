@@ -1,0 +1,469 @@
+CelebrationDetailScreen As screen:
+    Fill: =RGBA(255, 255, 255, 1)
+
+    # ============================================================
+    # HEADER BAR - Dark maroon/purple background
+    # ============================================================
+    rectHeader As rectangle:
+        X: =0
+        Y: =0
+        Width: =Parent.Width
+        Height: =80
+        Fill: =RGBA(74, 25, 66, 1)
+
+    icoBackArrow As icon.BackArrow:
+        X: =20
+        Y: =10
+        Width: =24
+        Height: =24
+        Color: =RGBA(255, 255, 255, 1)
+        OnSelect: =Back()
+
+    lblBackToActions As label:
+        X: =48
+        Y: =8
+        Width: =200
+        Height: =28
+        Text: ="Back to My Actions"
+        Size: =12
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Open Sans'
+        OnSelect: =Back()
+
+    lblScreenTitle As label:
+        X: =20
+        Y: =36
+        Width: =400
+        Height: =36
+        Text: ="Celebration Detail"
+        Size: =22
+        FontWeight: =FontWeight.Bold
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Open Sans'
+
+    imgUserAvatar As image:
+        X: =Parent.Width - 60
+        Y: =20
+        Width: =40
+        Height: =40
+        BorderRadius: =20
+        ImagePosition: =ImagePosition.Fill
+        Image: =SampleImage
+
+    lblUserName As label:
+        X: =Parent.Width - 220
+        Y: =28
+        Width: =150
+        Height: =28
+        Text: ="Vasilina Maroz"
+        Size: =13
+        Color: =RGBA(255, 255, 255, 1)
+        Align: =Align.Right
+        Font: =Font.'Open Sans'
+
+    # ============================================================
+    # INFO BANNER - Orange/amber notification bar
+    # ============================================================
+    rectInfoBanner As rectangle:
+        X: =40
+        Y: =95
+        Width: =Parent.Width - 80
+        Height: =55
+        Fill: =RGBA(255, 243, 224, 1)
+        BorderColor: =RGBA(245, 124, 0, 1)
+        BorderThickness: =1
+        BorderRadius: =4
+
+    lblInfoText As label:
+        X: =55
+        Y: =100
+        Width: =Parent.Width - 110
+        Height: =45
+        Text: ="The email text is pre-created for you using a template prompt. You can edit the text directly in the textbox if needed. You can also click Copy template prompt to copy the prompt and use Tell Me to generate another message."
+        Size: =11
+        Color: =RGBA(230, 81, 0, 1)
+        Font: =Font.'Open Sans'
+        VerticalAlign: =VerticalAlign.Middle
+        Overflow: =Overflow.Hidden
+
+    # ============================================================
+    # LEFT COLUMN - Event Summary
+    # ============================================================
+    lblEventSummaryHeader As label:
+        X: =55
+        Y: =170
+        Width: =220
+        Height: =35
+        Text: ="Event Summary"
+        Size: =18
+        FontWeight: =FontWeight.Bold
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+
+    # Celebration Type
+    lblCelebrationTypeLabel As label:
+        X: =55
+        Y: =215
+        Width: =180
+        Height: =22
+        Text: ="Celebration Type"
+        Size: =11
+        Color: =RGBA(102, 102, 102, 1)
+        Font: =Font.'Open Sans'
+
+    btnCelebrationTypeBadge As button:
+        X: =55
+        Y: =240
+        Width: =80
+        Height: =30
+        Text: ="Joiner"
+        Size: =11
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 137, 123, 1)
+        BorderColor: =RGBA(0, 137, 123, 1)
+        BorderRadius: =15
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+        DisabledFill: =RGBA(0, 137, 123, 1)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.Disabled
+
+    # Employee First Name
+    lblFirstNameLabel As label:
+        X: =55
+        Y: =285
+        Width: =180
+        Height: =22
+        Text: ="Employee First Name"
+        Size: =11
+        Color: =RGBA(102, 102, 102, 1)
+        Font: =Font.'Open Sans'
+
+    lblFirstNameValue As label:
+        X: =55
+        Y: =307
+        Width: =200
+        Height: =28
+        Text: =varCurrentEvent.EmployeeFirstName
+        Size: =15
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+
+    # Employee Last Name
+    lblLastNameLabel As label:
+        X: =55
+        Y: =350
+        Width: =180
+        Height: =22
+        Text: ="Employee Last Name"
+        Size: =11
+        Color: =RGBA(102, 102, 102, 1)
+        Font: =Font.'Open Sans'
+
+    lblLastNameValue As label:
+        X: =55
+        Y: =372
+        Width: =200
+        Height: =28
+        Text: =varCurrentEvent.EmployeeLastName
+        Size: =15
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+
+    # Current Status
+    lblStatusLabel As label:
+        X: =55
+        Y: =415
+        Width: =180
+        Height: =22
+        Text: ="Current Status"
+        Size: =11
+        Color: =RGBA(102, 102, 102, 1)
+        Font: =Font.'Open Sans'
+
+    lblStatusValue As label:
+        X: =55
+        Y: =437
+        Width: =200
+        Height: =28
+        Text: =varCurrentEvent.Status
+        Size: =13
+        Color: =RGBA(216, 67, 21, 1)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+        Underline: =true
+
+    # ============================================================
+    # Vertical Divider Line between columns
+    # ============================================================
+    rectDivider As rectangle:
+        X: =300
+        Y: =170
+        Width: =1
+        Height: =480
+        Fill: =RGBA(224, 224, 224, 1)
+
+    # ============================================================
+    # RIGHT COLUMN - Required Input
+    # ============================================================
+    lblRequiredInputHeader As label:
+        X: =330
+        Y: =170
+        Width: =220
+        Height: =35
+        Text: ="Required Input"
+        Size: =18
+        FontWeight: =FontWeight.Bold
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+
+    # Manager Draft Email
+    lblManagerEmailLabel As label:
+        X: =330
+        Y: =215
+        Width: =200
+        Height: =22
+        Text: ="Manager Draft Email"
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+
+    lblCopyPrompt As label:
+        X: =Parent.Width - 190
+        Y: =215
+        Width: =150
+        Height: =22
+        Text: ="Copy template prompt"
+        Size: =11
+        Color: =RGBA(74, 25, 66, 1)
+        Font: =Font.'Open Sans'
+        Align: =Align.Right
+        Underline: =true
+        OnSelect: |-
+            Copy(
+                "Write a warm welcome email from " & varCurrentEvent.ManagerName &
+                " to " & varCurrentEvent.EmployeeFirstName & " " & varCurrentEvent.EmployeeLastName &
+                " who is joining the team."
+            )
+
+    txtManagerEmail As text:
+        X: =330
+        Y: =242
+        Width: =Parent.Width - 370
+        Height: =160
+        Default: =varCurrentEvent.ManagerDraftEmail
+        Mode: =TextMode.MultiLine
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        BorderColor: =RGBA(189, 189, 189, 1)
+        BorderThickness: =1
+        BorderRadius: =4
+        Fill: =RGBA(255, 255, 255, 1)
+        PaddingTop: =10
+        PaddingBottom: =10
+        PaddingLeft: =12
+        PaddingRight: =12
+
+    # Communication Trigger Date
+    lblTriggerDateLabel As label:
+        X: =330
+        Y: =415
+        Width: =250
+        Height: =22
+        Text: ="Communication Trigger Date"
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+
+    dpTriggerDate As datePicker:
+        X: =330
+        Y: =440
+        Width: =220
+        Height: =38
+        DefaultDate: =varCurrentEvent.TriggerDate
+        Size: =12
+        Font: =Font.'Open Sans'
+        BorderColor: =RGBA(189, 189, 189, 1)
+        BorderThickness: =1
+        BorderRadius: =4
+        IconFill: =RGBA(102, 102, 102, 1)
+
+    # Communication Sender
+    lblSenderLabel As label:
+        X: =330
+        Y: =490
+        Width: =250
+        Height: =22
+        Text: ="Communication Sender"
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+
+    ddSender As dropdown:
+        X: =330
+        Y: =515
+        Width: =Parent.Width - 370
+        Height: =38
+        Items: =SenderOptions
+        Size: =12
+        Font: =Font.'Open Sans'
+        BorderColor: =RGBA(189, 189, 189, 1)
+        BorderThickness: =1
+        BorderRadius: =4
+        ChevronFill: =RGBA(102, 102, 102, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+
+    # Checkbox - Send own email
+    chkSendOwnEmail As checkbox:
+        X: =330
+        Y: =567
+        Width: =350
+        Height: =30
+        Text: ="I want to send my own email as well"
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        CheckboxBackgroundFill: =RGBA(255, 255, 255, 1)
+        CheckboxBorderColor: =RGBA(74, 25, 66, 1)
+        CheckmarkFill: =RGBA(74, 25, 66, 1)
+        Default: =true
+        OnCheck: =Set(varShowMyEmail, true)
+        OnUncheck: =Set(varShowMyEmail, false)
+
+    # My Email Section
+    lblMyEmailLabel As label:
+        X: =330
+        Y: =605
+        Width: =120
+        Height: =22
+        Text: ="My Email"
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+        Visible: =varShowMyEmail
+
+    btnDraftMyEmail As button:
+        X: =Parent.Width - 190
+        Y: =600
+        Width: =150
+        Height: =32
+        Text: ="✏ Draft my Email"
+        Size: =11
+        Color: =RGBA(74, 25, 66, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(74, 25, 66, 1)
+        BorderThickness: =1
+        BorderRadius: =4
+        Font: =Font.'Open Sans'
+        Visible: =varShowMyEmail
+        OnSelect: |-
+            // Placeholder for AI-assisted email drafting
+            Notify("Drafting your email...", NotificationType.Information)
+
+    txtMyEmail As text:
+        X: =330
+        Y: =635
+        Width: =Parent.Width - 370
+        Height: =80
+        Default: =""
+        HintText: ="Enter your personal email message..."
+        Mode: =TextMode.MultiLine
+        Size: =12
+        Color: =RGBA(51, 51, 51, 1)
+        Font: =Font.'Open Sans'
+        BorderColor: =RGBA(189, 189, 189, 1)
+        BorderThickness: =1
+        BorderRadius: =4
+        Fill: =RGBA(255, 255, 255, 1)
+        PaddingTop: =10
+        PaddingLeft: =12
+        Visible: =varShowMyEmail
+
+    # ============================================================
+    # BOTTOM ACTION BUTTONS
+    # ============================================================
+    btnDeclineEvent As button:
+        X: =Parent.Width - 500
+        Y: =Parent.Height - 55
+        Width: =140
+        Height: =40
+        Text: ="Decline Event"
+        Size: =13
+        Color: =RGBA(211, 47, 47, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(211, 47, 47, 1)
+        BorderThickness: =2
+        BorderRadius: =4
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+        HoverFill: =RGBA(255, 235, 238, 1)
+        PressedFill: =RGBA(255, 205, 210, 1)
+        OnSelect: |-
+            // Decline the celebration event
+            Notify("Event declined", NotificationType.Warning);
+            Back()
+
+    btnSaveDraft As button:
+        X: =Parent.Width - 340
+        Y: =Parent.Height - 55
+        Width: =130
+        Height: =40
+        Text: ="Save Draft"
+        Size: =13
+        Color: =RGBA(51, 51, 51, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        BorderColor: =RGBA(158, 158, 158, 1)
+        BorderThickness: =2
+        BorderRadius: =4
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+        HoverFill: =RGBA(245, 245, 245, 1)
+        PressedFill: =RGBA(224, 224, 224, 1)
+        OnSelect: |-
+            // Save draft logic
+            Patch(
+                CelebrationEvents,
+                varCurrentEvent,
+                {
+                    ManagerDraftEmail: txtManagerEmail.Text,
+                    TriggerDate: dpTriggerDate.SelectedDate,
+                    MyEmail: txtMyEmail.Text
+                }
+            );
+            Notify("Draft saved successfully", NotificationType.Success)
+
+    btnSubmitForReview As button:
+        X: =Parent.Width - 190
+        Y: =Parent.Height - 55
+        Width: =160
+        Height: =40
+        Text: ="Submit For Review"
+        Size: =13
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(45, 45, 45, 1)
+        BorderColor: =RGBA(45, 45, 45, 1)
+        BorderThickness: =0
+        BorderRadius: =4
+        Font: =Font.'Open Sans'
+        FontWeight: =FontWeight.Semibold
+        HoverFill: =RGBA(66, 66, 66, 1)
+        PressedFill: =RGBA(33, 33, 33, 1)
+        OnSelect: |-
+            // Submit for review logic
+            Patch(
+                CelebrationEvents,
+                varCurrentEvent,
+                {
+                    Status: "Submitted",
+                    ManagerDraftEmail: txtManagerEmail.Text,
+                    TriggerDate: dpTriggerDate.SelectedDate,
+                    MyEmail: txtMyEmail.Text
+                }
+            );
+            Notify("Submitted for review", NotificationType.Success);
+            Back()

@@ -1,0 +1,30 @@
+{
+  "FormatVersion": 1.3,
+  "Properties": {
+    "Name": "Celebration App",
+    "Id": "celebration-app-001",
+    "LocalDatabaseReferences": {},
+    "LibraryDependencies": "[]",
+    "Author": "",
+    "FileID": ""
+  },
+  "Header": {
+    "AppName": "Celebration App",
+    "LogoFileName": "",
+    "OriginatingVersion": "1.0",
+    "DocumentAppType": "DesktopOrTablet",
+    "DocumentLayoutWidth": 1366,
+    "DocumentLayoutHeight": 768,
+    "DocumentLayoutOrientation": "Landscape",
+    "DocumentLayoutScaleToFit": true,
+    "DocumentLayoutMaintainAspectRatio": true,
+    "DocumentLayoutLockOrientation": false
+  },
+  "PublishInfo": {
+    "AppName": "Celebration App",
+    "Source": ""
+  },
+  "ScreenOrder": [
+    "CelebrationDetailScreen"
+  ]
+}

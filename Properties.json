@@ -1,0 +1,17 @@
+{
+  "Author": "",
+  "Name": "Celebration App",
+  "Version": "1.0.0",
+  "Id": "celebration-app-001",
+  "DocumentAppType": "DesktopOrTablet",
+  "DocumentLayoutWidth": 1366,
+  "DocumentLayoutHeight": 768,
+  "AppPreviewFlagsKey": [],
+  "ExtensionData": {
+    "fileID": "",
+    "enablePcfExternalCatalog": false
+  },
+  "DefaultConnectedDataSourceMaxGetRowsCount": 500,
+  "InstrumentationKey": "",
+  "LocalDatabaseReferences": {}
+}

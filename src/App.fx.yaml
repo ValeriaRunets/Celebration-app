@@ -1,0 +1,49 @@
+App As appinfo:
+    OnStart: |-
+        // Initialize sample celebration event data
+        ClearCollect(
+            CelebrationEvents,
+            {
+                ID: 1,
+                CelebrationType: "Joiner",
+                EmployeeFirstName: "Michael",
+                EmployeeLastName: "Chen",
+                Status: "Needs Input",
+                ManagerName: "Vasilina Maroz",
+                TriggerDate: DateValue("2026-02-28"),
+                ManagerDraftEmail: "Dear Michal Chen,
+
+Welcome to the team! I am truly excited to have you join us and become a valued member of our group. My name is Vasilina MAROZ, and as your manager, I want to personally extend my warmest greetings.
+
+Our team is driven by core values of collaboration, innovation, and mutual support. We strive to create an environment where every member feels empowered to contribute their best and grow professionally. Your skills and enthusiasm will be a wonderful addition to our shared goals.",
+                CommunicationSender: "",
+                MyEmail: ""
+            }
+        );
+
+        // Initialize sender options
+        ClearCollect(
+            SenderOptions,
+            {Value: "Select person who will send the communication..."},
+            {Value: "Vasilina Maroz"},
+            {Value: "HR Department"},
+            {Value: "Team Lead"}
+        );
+
+        // Set current event context
+        Set(varCurrentEvent, LookUp(CelebrationEvents, ID = 1));
+        Set(varShowMyEmail, true);
+
+    Theme: |-
+        {
+            palette: {
+                themePrimary: "#4A1942",
+                themeDarker: "#2D0F28",
+                neutralPrimary: "#333333",
+                neutralSecondary: "#666666",
+                white: "#FFFFFF",
+                accent: "#D84315"
+            }
+        }
+
+    StartScreen: =CelebrationDetailScreen
