@@ -1,29 +1,53 @@
 {
   "FormatVersion": "0.24",
   "Properties": {
+    "Author": "",
     "Name": "CelebrationApp",
     "Id": "00000000-0000-0000-0000-000000000001",
-    "LocalDatabaseReferences": "{}",
-    "LibraryDependencies": "[]",
-    "Author": "",
-    "FileID": "00000000-0000-0000-0000-000000000002"
-  },
-  "Header": {
-    "AppName": "CelebrationApp",
-    "LogoFileName": "",
-    "OriginatingVersion": "1.326",
-    "DocumentVersionNumber": "1.326",
+    "FileID": "00000000-0000-0000-0000-000000000002",
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutWidth": 1366,
     "DocumentLayoutHeight": 768,
-    "DocumentLayoutOrientation": "Landscape",
+    "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
     "DocumentLayoutMaintainAspectRatio": true,
-    "DocumentLayoutLockOrientation": false
+    "DocumentLayoutLockOrientation": true,
+    "DocumentType": "App",
+    "AppCreationSource": "AppFromScratch",
+    "AppDescription": "",
+    "AppPreviewFlagsKey": [
+      "delayloadscreens",
+      "blockmovingcontrol",
+      "projectionmapping",
+      "usedisplaynamemetadata",
+      "usenonblockingonstartrule",
+      "useguiddatatypes",
+      "useexperimentalcdsconnector",
+      "useenforcesavedatalimits",
+      "componentauthoring",
+      "reliableconcurrent",
+      "dataTableV2Control",
+      "nativecdsexperimental",
+      "useexperimentalsqlconnector",
+      "enablecdsfileandlargeimage",
+      "enhanceddelegation",
+      "aibuilderserviceenrollment",
+      "enablesummerlandgeospatialfeatures",
+      "enablesummerlandmixedrealityfeatures"
+    ],
+    "DefaultConnectedDataSourceMaxGetRowsCount": 500,
+    "InstrumentationKey": "",
+    "LibraryDependencies": "[]",
+    "LocalDatabaseReferences": "{}",
+    "OriginatingVersion": "1.326"
+  },
+  "Header": {
+    "DocVersion": "1.326",
+    "MinVersionToLoad": "1.326",
+    "MSAppStructureVersion": "2.0"
   },
   "PublishInfo": {
     "AppName": "CelebrationApp",
-    "Source": "",
     "PublishTarget": "Player",
     "UserLocale": "en-US"
   },
