@@ -1,9 +1,6 @@
 CelebrationDetailScreen As screen:
     Fill: =RGBA(255, 255, 255, 1)
 
-    # ============================================================
-    # HEADER BAR - Dark maroon/purple background
-    # ============================================================
     rectHeader As rectangle:
         X: =0
         Y: =0
@@ -61,9 +58,6 @@ CelebrationDetailScreen As screen:
         Align: =Align.Right
         Font: =Font.'Open Sans'
 
-    # ============================================================
-    # INFO BANNER - Orange/amber notification bar
-    # ============================================================
     rectInfoBanner As rectangle:
         X: =40
         Y: =95
@@ -86,9 +80,6 @@ CelebrationDetailScreen As screen:
         VerticalAlign: =VerticalAlign.Middle
         Overflow: =Overflow.Hidden
 
-    # ============================================================
-    # LEFT COLUMN - Event Summary
-    # ============================================================
     lblEventSummaryHeader As label:
         X: =55
         Y: =170
@@ -100,7 +91,6 @@ CelebrationDetailScreen As screen:
         Color: =RGBA(51, 51, 51, 1)
         Font: =Font.'Open Sans'
 
-    # Celebration Type
     lblCelebrationTypeLabel As label:
         X: =55
         Y: =215
@@ -128,7 +118,6 @@ CelebrationDetailScreen As screen:
         DisabledColor: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.Disabled
 
-    # Employee First Name
     lblFirstNameLabel As label:
         X: =55
         Y: =285
@@ -149,7 +138,6 @@ CelebrationDetailScreen As screen:
         Color: =RGBA(51, 51, 51, 1)
         Font: =Font.'Open Sans'
 
-    # Employee Last Name
     lblLastNameLabel As label:
         X: =55
         Y: =350
@@ -170,7 +158,6 @@ CelebrationDetailScreen As screen:
         Color: =RGBA(51, 51, 51, 1)
         Font: =Font.'Open Sans'
 
-    # Current Status
     lblStatusLabel As label:
         X: =55
         Y: =415
@@ -193,9 +180,6 @@ CelebrationDetailScreen As screen:
         FontWeight: =FontWeight.Semibold
         Underline: =true
 
-    # ============================================================
-    # Vertical Divider Line between columns
-    # ============================================================
     rectDivider As rectangle:
         X: =300
         Y: =170
@@ -203,9 +187,6 @@ CelebrationDetailScreen As screen:
         Height: =480
         Fill: =RGBA(224, 224, 224, 1)
 
-    # ============================================================
-    # RIGHT COLUMN - Required Input
-    # ============================================================
     lblRequiredInputHeader As label:
         X: =330
         Y: =170
@@ -217,7 +198,6 @@ CelebrationDetailScreen As screen:
         Color: =RGBA(51, 51, 51, 1)
         Font: =Font.'Open Sans'
 
-    # Manager Draft Email
     lblManagerEmailLabel As label:
         X: =330
         Y: =215
@@ -241,7 +221,7 @@ CelebrationDetailScreen As screen:
         Align: =Align.Right
         Underline: =true
         OnSelect: |-
-            Copy(
+            =Copy(
                 "Write a warm welcome email from " & varCurrentEvent.ManagerName &
                 " to " & varCurrentEvent.EmployeeFirstName & " " & varCurrentEvent.EmployeeLastName &
                 " who is joining the team."
@@ -266,7 +246,6 @@ CelebrationDetailScreen As screen:
         PaddingLeft: =12
         PaddingRight: =12
 
-    # Communication Trigger Date
     lblTriggerDateLabel As label:
         X: =330
         Y: =415
@@ -291,7 +270,6 @@ CelebrationDetailScreen As screen:
         BorderRadius: =4
         IconFill: =RGBA(102, 102, 102, 1)
 
-    # Communication Sender
     lblSenderLabel As label:
         X: =330
         Y: =490
@@ -317,7 +295,6 @@ CelebrationDetailScreen As screen:
         ChevronFill: =RGBA(102, 102, 102, 1)
         Fill: =RGBA(255, 255, 255, 1)
 
-    # Checkbox - Send own email
     chkSendOwnEmail As checkbox:
         X: =330
         Y: =567
@@ -334,7 +311,6 @@ CelebrationDetailScreen As screen:
         OnCheck: =Set(varShowMyEmail, true)
         OnUncheck: =Set(varShowMyEmail, false)
 
-    # My Email Section
     lblMyEmailLabel As label:
         X: =330
         Y: =605
@@ -362,8 +338,7 @@ CelebrationDetailScreen As screen:
         Font: =Font.'Open Sans'
         Visible: =varShowMyEmail
         OnSelect: |-
-            // Placeholder for AI-assisted email drafting
-            Notify("Drafting your email...", NotificationType.Information)
+            =Notify("Drafting your email...", NotificationType.Information)
 
     txtMyEmail As text:
         X: =330
@@ -384,9 +359,6 @@ CelebrationDetailScreen As screen:
         PaddingLeft: =12
         Visible: =varShowMyEmail
 
-    # ============================================================
-    # BOTTOM ACTION BUTTONS
-    # ============================================================
     btnDeclineEvent As button:
         X: =Parent.Width - 500
         Y: =Parent.Height - 55
@@ -404,8 +376,7 @@ CelebrationDetailScreen As screen:
         HoverFill: =RGBA(255, 235, 238, 1)
         PressedFill: =RGBA(255, 205, 210, 1)
         OnSelect: |-
-            // Decline the celebration event
-            Notify("Event declined", NotificationType.Warning);
+            =Notify("Event declined", NotificationType.Warning);
             Back()
 
     btnSaveDraft As button:
@@ -425,8 +396,7 @@ CelebrationDetailScreen As screen:
         HoverFill: =RGBA(245, 245, 245, 1)
         PressedFill: =RGBA(224, 224, 224, 1)
         OnSelect: |-
-            // Save draft logic
-            Patch(
+            =Patch(
                 CelebrationEvents,
                 varCurrentEvent,
                 {
@@ -454,8 +424,7 @@ CelebrationDetailScreen As screen:
         HoverFill: =RGBA(66, 66, 66, 1)
         PressedFill: =RGBA(33, 33, 33, 1)
         OnSelect: |-
-            // Submit for review logic
-            Patch(
+            =Patch(
                 CelebrationEvents,
                 varCurrentEvent,
                 {
