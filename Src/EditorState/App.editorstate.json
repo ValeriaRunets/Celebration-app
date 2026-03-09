@@ -1,0 +1,9 @@
+{
+  "App": {
+    "Name": "App",
+    "Type": "ControlInfo",
+    "TopParentName": "App",
+    "IsLocked": false,
+    "Properties": {}
+  }
+}

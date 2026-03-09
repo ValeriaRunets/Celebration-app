@@ -1,0 +1,306 @@
+{
+  "CelebrationDetailScreen": {
+    "Name": "CelebrationDetailScreen",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "rectHeader": {
+    "Name": "rectHeader",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultRectangleStyle",
+    "ParentIndex": 0,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "icoBackArrow": {
+    "Name": "icoBackArrow",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultIconStyle",
+    "ParentIndex": 1,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblBackToActions": {
+    "Name": "lblBackToActions",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 2,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblScreenTitle": {
+    "Name": "lblScreenTitle",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 3,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "imgUserAvatar": {
+    "Name": "imgUserAvatar",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultImageStyle",
+    "ParentIndex": 4,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblUserName": {
+    "Name": "lblUserName",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 5,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "rectInfoBanner": {
+    "Name": "rectInfoBanner",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultRectangleStyle",
+    "ParentIndex": 6,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblInfoText": {
+    "Name": "lblInfoText",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 7,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblEventSummaryHeader": {
+    "Name": "lblEventSummaryHeader",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 8,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblCelebrationTypeLabel": {
+    "Name": "lblCelebrationTypeLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 9,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "btnCelebrationTypeBadge": {
+    "Name": "btnCelebrationTypeBadge",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultButtonStyle",
+    "ParentIndex": 10,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblFirstNameLabel": {
+    "Name": "lblFirstNameLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 11,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblFirstNameValue": {
+    "Name": "lblFirstNameValue",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 12,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblLastNameLabel": {
+    "Name": "lblLastNameLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 13,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblLastNameValue": {
+    "Name": "lblLastNameValue",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 14,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblStatusLabel": {
+    "Name": "lblStatusLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 15,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblStatusValue": {
+    "Name": "lblStatusValue",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 16,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "rectDivider": {
+    "Name": "rectDivider",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultRectangleStyle",
+    "ParentIndex": 17,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblRequiredInputHeader": {
+    "Name": "lblRequiredInputHeader",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 18,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblManagerEmailLabel": {
+    "Name": "lblManagerEmailLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 19,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblCopyPrompt": {
+    "Name": "lblCopyPrompt",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 20,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "txtManagerEmail": {
+    "Name": "txtManagerEmail",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultTextStyle",
+    "ParentIndex": 21,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblTriggerDateLabel": {
+    "Name": "lblTriggerDateLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 22,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "dpTriggerDate": {
+    "Name": "dpTriggerDate",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultDatePickerStyle",
+    "ParentIndex": 23,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblSenderLabel": {
+    "Name": "lblSenderLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 24,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "ddSender": {
+    "Name": "ddSender",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultDropdownStyle",
+    "ParentIndex": 25,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "chkSendOwnEmail": {
+    "Name": "chkSendOwnEmail",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultCheckboxStyle",
+    "ParentIndex": 26,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "lblMyEmailLabel": {
+    "Name": "lblMyEmailLabel",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultLabelStyle",
+    "ParentIndex": 27,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "btnDraftMyEmail": {
+    "Name": "btnDraftMyEmail",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultButtonStyle",
+    "ParentIndex": 28,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "txtMyEmail": {
+    "Name": "txtMyEmail",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultTextStyle",
+    "ParentIndex": 29,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "btnDeclineEvent": {
+    "Name": "btnDeclineEvent",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultButtonStyle",
+    "ParentIndex": 30,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "btnSaveDraft": {
+    "Name": "btnSaveDraft",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultButtonStyle",
+    "ParentIndex": 31,
+    "IsLocked": false,
+    "Properties": {}
+  },
+  "btnSubmitForReview": {
+    "Name": "btnSubmitForReview",
+    "Type": "ControlInfo",
+    "TopParentName": "CelebrationDetailScreen",
+    "StyleName": "defaultButtonStyle",
+    "ParentIndex": 32,
+    "IsLocked": false,
+    "Properties": {}
+  }
+}

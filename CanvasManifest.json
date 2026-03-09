@@ -1,17 +1,18 @@
 {
-  "FormatVersion": 1.3,
+  "FormatVersion": "0.24",
   "Properties": {
-    "Name": "Celebration App",
-    "Id": "celebration-app-001",
+    "Name": "CelebrationApp",
+    "Id": "00000000-0000-0000-0000-000000000001",
     "LocalDatabaseReferences": {},
     "LibraryDependencies": "[]",
     "Author": "",
-    "FileID": ""
+    "FileID": "00000000-0000-0000-0000-000000000002"
   },
   "Header": {
-    "AppName": "Celebration App",
+    "AppName": "CelebrationApp",
     "LogoFileName": "",
-    "OriginatingVersion": "1.0",
+    "OriginatingVersion": "1.326",
+    "DocumentVersionNumber": "1.326",
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutWidth": 1366,
     "DocumentLayoutHeight": 768,
@@ -21,8 +22,10 @@
     "DocumentLayoutLockOrientation": false
   },
   "PublishInfo": {
-    "AppName": "Celebration App",
-    "Source": ""
+    "AppName": "CelebrationApp",
+    "Source": "",
+    "PublishTarget": "Player",
+    "UserLocale": "en-US"
   },
   "ScreenOrder": [
     "CelebrationDetailScreen"
