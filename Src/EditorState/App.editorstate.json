@@ -3,6 +3,7 @@
   "ControlStates": {
     "App": {
       "Name": "App",
+      "StyleName": "defaultAppinfoStyle",
       "Properties": [],
       "IsGroupControl": false
     }

@@ -3,6 +3,7 @@
   "ControlStates": {
     "CelebrationDetailScreen": {
       "Name": "CelebrationDetailScreen",
+      "StyleName": "defaultScreenStyle",
       "Properties": [],
       "IsGroupControl": false
     },
