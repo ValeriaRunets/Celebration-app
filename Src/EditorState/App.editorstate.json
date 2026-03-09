@@ -1,9 +1,10 @@
 {
-  "App": {
-    "Name": "App",
-    "Type": "ControlInfo",
-    "TopParentName": "App",
-    "IsLocked": false,
-    "Properties": {}
+  "TopParentName": "App",
+  "ControlStates": {
+    "App": {
+      "Name": "App",
+      "Properties": [],
+      "IsGroupControl": false
+    }
   }
 }

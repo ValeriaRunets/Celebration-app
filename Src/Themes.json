@@ -2,30 +2,30 @@
   "CustomThemes": [
     {
       "name": "CelebrationTheme",
-      "palette": {
-        "themePrimary": "#4A1942",
-        "themeLighterAlt": "#f7f0f6",
-        "themeLighter": "#e0c6dd",
-        "themeLight": "#c699c1",
-        "themeTertiary": "#924d8a",
-        "themeSecondary": "#6b1f60",
-        "themeDarkAlt": "#43163b",
-        "themeDark": "#381232",
-        "themeDarker": "#290d25",
-        "neutralLighterAlt": "#faf9f8",
-        "neutralLighter": "#f3f2f1",
-        "neutralLight": "#edebe9",
-        "neutralQuaternaryAlt": "#e1dfdd",
-        "neutralQuaternary": "#d0d0d0",
-        "neutralTertiaryAlt": "#c8c6c4",
-        "neutralTertiary": "#a19f9d",
-        "neutralSecondary": "#605e5c",
-        "neutralPrimaryAlt": "#3b3a39",
-        "neutralPrimary": "#323130",
-        "neutralDark": "#201f1e",
-        "black": "#000000",
-        "white": "#ffffff"
-      }
+      "palette": [
+        { "name": "themePrimary", "value": "RGBA(74, 25, 66, 1)", "type": "c" },
+        { "name": "themeLighterAlt", "value": "RGBA(247, 240, 246, 1)", "type": "c" },
+        { "name": "themeLighter", "value": "RGBA(224, 198, 221, 1)", "type": "c" },
+        { "name": "themeLight", "value": "RGBA(198, 153, 193, 1)", "type": "c" },
+        { "name": "themeTertiary", "value": "RGBA(146, 77, 138, 1)", "type": "c" },
+        { "name": "themeSecondary", "value": "RGBA(107, 31, 96, 1)", "type": "c" },
+        { "name": "themeDarkAlt", "value": "RGBA(67, 22, 59, 1)", "type": "c" },
+        { "name": "themeDark", "value": "RGBA(56, 18, 50, 1)", "type": "c" },
+        { "name": "themeDarker", "value": "RGBA(41, 13, 37, 1)", "type": "c" },
+        { "name": "neutralLighterAlt", "value": "RGBA(250, 249, 248, 1)", "type": "c" },
+        { "name": "neutralLighter", "value": "RGBA(243, 242, 241, 1)", "type": "c" },
+        { "name": "neutralLight", "value": "RGBA(237, 235, 233, 1)", "type": "c" },
+        { "name": "neutralQuaternaryAlt", "value": "RGBA(225, 223, 221, 1)", "type": "c" },
+        { "name": "neutralQuaternary", "value": "RGBA(208, 208, 208, 1)", "type": "c" },
+        { "name": "neutralTertiaryAlt", "value": "RGBA(200, 198, 196, 1)", "type": "c" },
+        { "name": "neutralTertiary", "value": "RGBA(161, 159, 157, 1)", "type": "c" },
+        { "name": "neutralSecondary", "value": "RGBA(96, 94, 92, 1)", "type": "c" },
+        { "name": "neutralPrimaryAlt", "value": "RGBA(59, 58, 57, 1)", "type": "c" },
+        { "name": "neutralPrimary", "value": "RGBA(50, 49, 48, 1)", "type": "c" },
+        { "name": "neutralDark", "value": "RGBA(32, 31, 30, 1)", "type": "c" },
+        { "name": "black", "value": "RGBA(0, 0, 0, 1)", "type": "c" },
+        { "name": "white", "value": "RGBA(255, 255, 255, 1)", "type": "c" }
+      ]
     }
   ],
   "CurrentTheme": "CelebrationTheme"

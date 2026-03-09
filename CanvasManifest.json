@@ -3,7 +3,7 @@
   "Properties": {
     "Name": "CelebrationApp",
     "Id": "00000000-0000-0000-0000-000000000001",
-    "LocalDatabaseReferences": {},
+    "LocalDatabaseReferences": "{}",
     "LibraryDependencies": "[]",
     "Author": "",
     "FileID": "00000000-0000-0000-0000-000000000002"
